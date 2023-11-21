@@ -25,8 +25,11 @@ public class WorkingWithRadioButtons {
 				for (WebElement radioButton : allRadioButtons) 
 				{
 					radioButton.click();
+					System.out.println(radioButton.getText());
 					Thread.sleep(3000);
 				}
+				driver.close();
+
 	}
 
 }
